@@ -29,7 +29,7 @@ class Index extends MainController
             $model->add($v);
         }
 
-        $this->addMessage('Сообщения добавлены');
+        $this->addMessage('Загрузка файла.<br> Загрузка завершена.<br> Обработка файла.<br> Обработка завершена.<br> Сообщения добавлены.');
         $this->redirect('/');
     }
 }
