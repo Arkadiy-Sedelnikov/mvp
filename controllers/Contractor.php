@@ -17,7 +17,7 @@ class Contractor extends MainController
         $model = new Messages();
         $Requests = new Requests();
         $Orders = new Orders();
-        $messages = $model->getRows([]);
+        $messages = $model->getRows([], '*', '', 0, 0, 'id desc');
         $requests = $Requests->getRows([], '*', 'message_id');
         $orders = $Orders->getRows([], '*', 'message_id');
         $data = [];

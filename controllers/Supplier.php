@@ -17,7 +17,7 @@ class Supplier extends MainController
         $Requests = new Requests();
         $Orders = new Orders();
         $messages = $Messages->getRows([], '*', 'id');
-        $orders = $Orders->getRows([]);
+        $orders = $Orders->getRows([], '*', '', 0, 0, 'id desc');
 
         $data = [];
         foreach ($orders as $order) {

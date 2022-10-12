@@ -16,7 +16,7 @@ class Customer extends MainController
         $Messages = new Messages();
         $Requests = new Requests();
         $Orders = new Orders();
-        $messages = $Messages->getRows([], '*', 'id');
+        $messages = $Messages->getRows([], '*', 'id', 0, 0, 'id desc');
         $requests = $Requests->getRows([], '*', 'message_id');
         $orders = $Orders->getRows([], '*', 'message_id');
 
