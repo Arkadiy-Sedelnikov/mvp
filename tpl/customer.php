@@ -75,6 +75,7 @@
         <?php } ?>
     </div>
     <div class="col-sm">
-        <img src="/tpl/assets/images/img1.png">
+        <img src="/tpl/assets/images/image3.png" style="width: 100%">
+        <img src="/tpl/assets/images/image5.png" style="width: 100%">
     </div>
 </div>
